@@ -12,10 +12,44 @@
 		<h1>Curriculum vitae</h1>
 	</header>
 	<section>
-		
+		<section ng-controller="experienceController">
+			<header>
+				<h2>Professional Experience</h2>
+			</header>
+			<section ng-repeat="experience in experienceList">
+				<header>
+					<h3>{{experience.enterpriseName}}</h3>
+				</header>
+				<section>{{experience.posteDescription}}</section>
+				<section ng-repeat="project in experience.projectList">
+					<header>
+						<h4>{{project.projectName}}</h4>
+					</header>
+					<section>{{project.projectDescription}}</section>
+				</section>
+			</section>
+		</section>
+		<section>
+			<header>
+				<h2>Formation</h2>
+			</header>
+			<section>
+				<header></header>
+			</section>
+		</section>
+		<section ng-controller="hobbyController">
+			<header>
+				<h2>Hobby</h2>
+			</header>
+			<section>
+				<ul ng-repeat="hobby in hobbyList">
+					<li>{{hobby}}</li>
+				</ul>
+			</section>
+		</section>
 	</section>
-	<footer>
-		
-	</footer>
+	<footer></footer>
+	<script src="js/controllers/hobbyController.js"></script>
+	<script src="js/controllers/experienceController.js"></script>
 </body>
 </html>
