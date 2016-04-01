@@ -29,12 +29,13 @@
 				</section>
 			</section>
 		</section>
-		<section>
+		<section ng-controller="formationController">
 			<header>
 				<h2>Formation</h2>
 			</header>
-			<section>
-				<header></header>
+			<section ng-repeat="formation in formationList">
+				<header><h4>{{formation.date | date}} - {{formation.name}}</h4></header>
+				<section>{{formation.description}}</section>
 			</section>
 		</section>
 		<section ng-controller="hobbyController">
