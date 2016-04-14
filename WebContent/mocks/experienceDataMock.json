@@ -1,40 +1,62 @@
-[ {
-		"enterpriseName" : "Enterprise 01",
-		"posteDescription" : "Work description",
-		"projectList" : [ {
-			"projectName" : "Project 01",
-			"projectDescription" : "Project 01 description"
-		}, {
-			"projectName" : "Project 02",
-			"projectDescription" : "Project 02 description"
-		}, {
-			"projectName" : "Project 03",
-			"projectDescription" : "Project 03 description"
-		} ]
-	}, {
-		"enterpriseName" : "Enterprise 02",
-		"posteDescription" : "Work description",
-		"projectList" : [ {
-			"projectName" : "Project 01",
-			"projectDescription" : "Project 01 description"
-		}, {
-			"projectName" : "Project 02",
-			"projectDescription" : "Project 02 description"
-		}, {
-			"projectName" : "Project 03",
-			"projectDescription" : "Project 03 description"
-		} ]
-	}, {
-		"enterpriseName" : "Enterprise 03",
-		"posteDescription" : "Work description",
-		"projectList" : [ {
-			"projectName" : "Project 01",
-			"projectDescription" : "Project 01 description"
-		}, {
-			"projectName" : "Project 02",
-			"projectDescription" : "Project 02 description"
-		}, {
-			"projectName" : "Project 03",
-			"projectDescription" : "Project 03 description"
-		} ]
-	} ]
+[
+  {
+	"enterpriseName": "Enterprise 01",
+	"starDate": 1234567890,
+	"endDate": 2234567890,
+	"workDescription": "Work description",
+	"projectList": [
+	  {
+		"projectName": "Project 01",
+		"projectDescription": "Project 01 description"
+	  },
+	  {
+		"projectName": "Project 02",
+		"projectDescription": "Project 02 description"
+	  },
+	  {
+		"projectName": "Project 03",
+		"projectDescription": "Project 03 description"
+	  }
+	]
+  },
+  {
+	"enterpriseName": "Enterprise 02",
+	"workDescription": "Work description",
+	"starDate": 1234567890,
+	"endDate": 2234567890,
+	"projectList": [
+	  {
+		"projectName": "Project 01",
+		"projectDescription": "Project 01 description"
+	  },
+	  {
+		"projectName": "Project 02",
+		"projectDescription": "Project 02 description"
+	  },
+	  {
+		"projectName": "Project 03",
+		"projectDescription": "Project 03 description"
+	  }
+	]
+  },
+  {
+	"enterpriseName": "Enterprise 03",
+	"workDescription": "Work description",
+	"starDate": 1234567890,
+	"endDate": 2234567890,
+	"projectList": [
+	  {
+		"projectName": "Project 01",
+		"projectDescription": "Project 01 description"
+	  },
+	  {
+		"projectName": "Project 02",
+		"projectDescription": "Project 02 description"
+	  },
+	  {
+		"projectName": "Project 03",
+		"projectDescription": "Project 03 description"
+	  }
+	]
+  }
+]
