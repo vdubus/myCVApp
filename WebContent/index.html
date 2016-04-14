@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-<meta charset="UTF-8">
-<title>Curriculum vitae</title>
-<script src="js/libs/jquery-2.2.2.min.js"></script>
-<script src="js/libs/angularjs-1.4.9.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Curriculum vitae</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
 </head>
 <body>
-	<header>
-		<h1>Curriculum vitae</h1>
-	</header>
+<header>
+	<h1>Curriculum vitae</h1>
+</header>
+<section>
+	<section ng-controller="experienceController">
+		<header>
+			<h2>Professional Experiences <a href="#/experience/new">Add</a></h2>
+		</header>
+		<ng-view></ng-view>
+	</section>
 	<section>
-		<section ng-controller="experienceController">
-			<header>
-				<h2>Professional Experience</h2>
-			</header>
-			<section ng-repeat="experience in experienceList">
-				<header>
-					<h3>{{experience.enterpriseName}}</h3>
-				</header>
-				<section>{{experience.posteDescription}}</section>
-				<section ng-repeat="project in experience.projectList">
-					<header>
-						<h4>{{project.projectName}}</h4>
-					</header>
-					<section>{{project.projectDescription}}</section>
-				</section>
-			</section>
-		</section>
-		<section ng-controller="formationController">
-			<header>
-				<h2>Formation</h2>
-			</header>
-			<section ng-repeat="formation in formationList">
-				<header><h4>{{formation.date | date}} - {{formation.name}}</h4></header>
-				<section>{{formation.description}}</section>
-			</section>
-		</section>
-		<section ng-controller="hobbyController">
-			<header>
-				<h2>Hobby</h2>
-			</header>
-			<section>
-				<ul ng-repeat="hobby in hobbyList">
-					<li>{{hobby}}</li>
-				</ul>
-			</section>
+		<header>
+			<h2>Certifications</h2>
+		</header>
+		<section></section>
+	</section>
+	<section ng-controller="formationController">
+		<header>
+			<h2>Formations</h2>
+		</header>
+		<section ng-repeat="formation in formationList">
+			<header><h4>{{formation.date | date}} - {{formation.name}}</h4></header>
+			<section>{{formation.description}}</section>
 		</section>
 	</section>
-	<footer></footer>
-	<script src="js/app.js"></script>
-	<script src="js/controllers/experienceController.js"></script>
-	<script src="js/controllers/formationController.js"></script>
-	<script src="js/controllers/hobbyController.js"></script>
+	<section ng-controller="hobbyController">
+		<header>
+			<h2>Hobby</h2>
+		</header>
+		<section>
+			<ul ng-repeat="hobby in hobbyList">
+				<li>{{hobby}}</li>
+			</ul>
+		</section>
+	</section>
+</section>
+<footer></footer>
+<script src="js/app.js"></script>
+<script src="js/controllers/experienceController.js"></script>
+<script src="js/controllers/formationController.js"></script>
+<script src="js/controllers/hobbyController.js"></script>
 </body>
 </html>

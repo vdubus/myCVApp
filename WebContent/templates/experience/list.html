@@ -1,0 +1,12 @@
+<section ng-repeat="experience in experienceList">
+	<header>
+		<h3>{{experience.startDate | date}} - {{experience.endDate | date}} - {{experience.enterpriseName}}</h3>
+	</header>
+	<section>{{experience.workDescription}}</section>
+	<section ng-repeat="project in experience.projectList">
+		<header>
+			<h4>{{project.projectName}}</h4>
+		</header>
+		<section>{{project.projectDescription}}</section>
+	</section>
+</section>
