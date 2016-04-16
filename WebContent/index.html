@@ -8,45 +8,11 @@
 <header>
 	<h1>Curriculum vitae</h1>
 </header>
-<section>
-	<section ng-controller="experienceController">
-		<header>
-			<h2>Professional Experiences <a href="#/experience/new">Add</a></h2>
-		</header>
-		<ng-view></ng-view>
-	</section>
-	<section>
-		<header>
-			<h2>Certifications</h2>
-		</header>
-		<section></section>
-	</section>
-	<section ng-controller="formationController">
-		<header>
-			<h2>Formations</h2>
-		</header>
-		<section ng-repeat="formation in formationList">
-			<header><h4>{{formation.date | date}} - {{formation.name}}</h4></header>
-			<section>{{formation.description}}</section>
-		</section>
-	</section>
-	<section ng-controller="hobbyController">
-		<header>
-			<h2>Hobby</h2>
-		</header>
-		<section>
-			<ul ng-repeat="hobby in hobbyList">
-				<li>{{hobby}}</li>
-			</ul>
-		</section>
-	</section>
-</section>
+<ng-view></ng-view>
 <footer></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.min.js"></script>
 <script src="js/app.js"></script>
-<script src="js/controllers/experienceController.js"></script>
-<script src="js/controllers/formationController.js"></script>
-<script src="js/controllers/hobbyController.js"></script>
+<script src="js/controllers/displayController.js"></script>
 </body>
 </html>

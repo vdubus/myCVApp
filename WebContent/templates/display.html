@@ -1,0 +1,44 @@
+<section ng-controller="displayController">
+	<section>
+		<header>
+			<h2>Professional Experiences <a href="#/experience/new">Add</a></h2>
+		</header>
+		<section ng-repeat="experience in experienceList">
+			<header>
+				<h3>{{experience.startDate | date}} - {{experience.endDate | date}} - {{experience.enterpriseName}}</h3>
+			</header>
+			<section>{{experience.workDescription}}</section>
+			<section ng-repeat="project in experience.projectList">
+				<header>
+					<h4>{{project.projectName}}</h4>
+				</header>
+				<section>{{project.projectDescription}}</section>
+			</section>
+		</section>
+	</section>
+	<section>
+		<header>
+			<h2>Certifications</h2>
+		</header>
+		<section></section>
+	</section>
+	<section>
+		<header>
+			<h2>Formations</h2>
+		</header>
+		<section ng-repeat="formation in formationList">
+			<header><h4>{{formation.date | date}} - {{formation.name}}</h4></header>
+			<section>{{formation.description}}</section>
+		</section>
+	</section>
+	<section>
+		<header>
+			<h2>Hobby</h2>
+		</header>
+		<section>
+			<ul ng-repeat="hobby in hobbyList">
+				<li>{{hobby}}</li>
+			</ul>
+		</section>
+	</section>
+</section>
