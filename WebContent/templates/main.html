@@ -1,5 +1,5 @@
-<section ng-controller="displayController">
-	<section>
+<section ng-controller="mainController">
+	<section ng-controller="experienceController">
 		<header>
 			<h2>Professional Experiences <a href="#/experience/new">Add</a></h2>
 		</header>
@@ -22,7 +22,7 @@
 		</header>
 		<section></section>
 	</section>
-	<section>
+	<section ng-controller="formationController">
 		<header>
 			<h2>Formations</h2>
 		</header>
@@ -31,7 +31,7 @@
 			<section>{{formation.description}}</section>
 		</section>
 	</section>
-	<section>
+	<section ng-controller="hobbyController">
 		<header>
 			<h2>Hobby</h2>
 		</header>
