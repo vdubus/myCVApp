@@ -1,59 +1,71 @@
 [
   {
-	"enterpriseName": "Enterprise 01",
+	"id":1,
+	"companyName": "Enterprise 01",
 	"starDate": 1234567890,
 	"endDate": 2234567890,
 	"workDescription": "Work description",
 	"projectList": [
 	  {
+		"id":1,
 		"projectName": "Project 01",
 		"projectDescription": "Project 01 description"
 	  },
 	  {
+		"id":2,
 		"projectName": "Project 02",
 		"projectDescription": "Project 02 description"
 	  },
 	  {
+		"id":3,
 		"projectName": "Project 03",
 		"projectDescription": "Project 03 description"
 	  }
 	]
   },
   {
-	"enterpriseName": "Enterprise 02",
+	"id":2,
+	"companyName": "Enterprise 02",
 	"workDescription": "Work description",
 	"starDate": 1234567890,
 	"endDate": 2234567890,
 	"projectList": [
 	  {
+		"id":1,
 		"projectName": "Project 01",
 		"projectDescription": "Project 01 description"
 	  },
 	  {
+		"id":2,
 		"projectName": "Project 02",
 		"projectDescription": "Project 02 description"
 	  },
 	  {
+		"id":3,
 		"projectName": "Project 03",
 		"projectDescription": "Project 03 description"
 	  }
 	]
   },
   {
-	"enterpriseName": "Enterprise 03",
+	"id":3,
+	"companyName": "Enterprise 03",
 	"workDescription": "Work description",
 	"starDate": 1234567890,
 	"endDate": 2234567890,
 	"projectList": [
 	  {
+		"id":1,
 		"projectName": "Project 01",
 		"projectDescription": "Project 01 description"
 	  },
 	  {
+		"id":2,
 		"projectName": "Project 02",
 		"projectDescription": "Project 02 description"
 	  },
 	  {
+		"id":3,
 		"projectName": "Project 03",
 		"projectDescription": "Project 03 description"
 	  }

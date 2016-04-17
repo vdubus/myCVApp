@@ -5,7 +5,7 @@
 		</header>
 		<section ng-repeat="experience in experienceList">
 			<header>
-				<h3>{{experience.startDate | date}} - {{experience.endDate | date}} - {{experience.enterpriseName}}</h3>
+				<h3>{{experience.startDate | date}} - {{experience.endDate | date}} - {{experience.companyName}}</h3>
 			</header>
 			<section>{{experience.workDescription}}</section>
 			<section ng-repeat="project in experience.projectList">
