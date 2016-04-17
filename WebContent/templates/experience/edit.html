@@ -1,3 +1,17 @@
 <section>
-	Hello World ! <a href="#/">Return</a>
+	<form ng-submit="editCtrl.add()">
+		<p>
+			<label for="test">Starting date</label>
+			<input id="test" type="text" ng-model="editCtrl.value"/>
+		</p>
+		<p>
+			<input type="submit" />
+		</p>
+	</form>
+	<section>
+		<p ng-repeat="tmp in editCtrl.values">
+			{{tmp}}
+		</p>
+	</section>
+	<a href="#/">Return</a>
 </section>
