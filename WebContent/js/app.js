@@ -1,14 +1,25 @@
 /**
  *
  */
-var app = angular.module("app", ["ngRoute"]);
-app.controller("editExpController", ["$scope", function ($scope) {
+var app = angular.module("app", ["ngRoute", "LocalStorageModule"]);
+app.config(function (localStorageServiceProvider) {
+	localStorageServiceProvider
+		.setPrefix('myCVApp')
+		.setStorageType('sessionStorage');
+});
+app.controller("editExpController", ["$scope", "localStorageService", function ($scope, localStorageService) {
 	// localStorage
 	var editCtrl = this;
-	editCtrl.values = [];
+	editCtrl.values = localStorageService.get("test");
+	if(!editCtrl.values){
+		editCtrl.values = [];
+	}
 	editCtrl.add = function(){
 		editCtrl.values.push(editCtrl.value);
 		editCtrl.value = '';
+	}
+	editCtrl.save = function(){
+		localStorageService.set("test", editCtrl.values);
 	}
 }]);
 app.config(function ($routeProvider) {

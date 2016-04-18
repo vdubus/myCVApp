@@ -9,9 +9,10 @@
 		</p>
 	</form>
 	<section>
-		<p ng-repeat="tmp in editCtrl.values">
+		<p ng-repeat="tmp in editCtrl.values track by $index">
 			{{tmp}}
 		</p>
 	</section>
+	<button ng-click="editCtrl.save()">Save</button>
 	<a href="#/">Return</a>
 </section>
